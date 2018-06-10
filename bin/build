@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+
+require('babel-register')({
+  plugins: ['transform-es2015-modules-simple-commonjs']
+});
+
+require('babel-polyfill');
+
+const argv = require('yargs')
+  .option('server', {
+    alias: 's',
+    default: 'false',
+    type: 'boolean'
+  })
+  .option('client', {
+    alias: 'c',
+    default: 'false',
+    type: 'boolean'
+  }).argv;
+
+if (argv.client) {
+  require('./../scripts/client');
+}
+
+if (argv.server) {
+  require('./../scripts/server');
+}
+
+if (!argv.server && !argv.client) {
+  console.log(`
+
+    build [options]
+
+    options:
+
+      --server, -s    bundle server code
+
+      --client, -c    bundle client code
+
+      --start         start runing server
+
+      --dev           start runing development server
+
+    `);
+}

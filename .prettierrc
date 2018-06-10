@@ -1,0 +1,11 @@
+{
+  "tabWidth": 2,
+  "jsxSingleQuote": true,
+  "useTabs": false,
+  "jsonEnable": [],
+  "printWidth": 80,
+  "bracesSpacing": true,
+  "bracketSpacing": false,
+  "arrowParens": false,
+  "openOutput": false
+}

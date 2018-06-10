@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+require('babel-register')({
+  plugins: ['transform-es2015-modules-simple-commonjs']
+});
+
+require('babel-polyfill');
+
+require('./../server');
