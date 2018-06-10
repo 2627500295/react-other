@@ -1,0 +1,62 @@
+{
+  // Emmet 配置
+  "emmet.variables": {
+    "lang": "zh-cmn-Hans",
+    "charset": "UTF-8"
+  },
+
+  // prettier
+  "editor.formatOnSave": true,
+  "prettier.tabWidth": 2,
+
+  // Tab空白格数
+  "editor.tabSize": 2,
+
+  // 自动换行
+  "editor.wordWrap": "on",
+
+  // 按 Tab 键时插入空格。
+  // 该设置在 "editor.detectIndentation" 启用时根据文件内容可能会被覆盖。
+  "editor.insertSpaces": true,
+
+  // 编辑区失去焦点
+  "files.autoSave": "onFocusChange",
+
+  // 多少毫秒后自动保存更改过的文件。
+  // 仅在“files.autoSave”设置为“afterDelay”时适用。
+  "files.autoSaveDelay": 1000,
+
+  // Zen模式是否隐藏工作台选项卡
+  "zenMode.hideTabs": false,
+
+  // 当打开文件时
+  // 将基于文件内容检测 "editor.tabSize" 和 "editor.insertSpaces"。
+  "editor.detectIndentation": false,
+
+  // 控制是否显示 minimap
+  "editor.minimap.enabled": false,
+
+  // 保存文件时在文件末尾插入一个最终新行。
+  "files.insertFinalNewline": true,
+
+  // 保存文件时将删除在最终新行后的所有新行。
+  "files.trimFinalNewlines": true,
+
+  // 启用后，将在保存文件时剪裁尾随空格。
+  "files.trimTrailingWhitespace": true,
+
+  // 删除尾随自动插入的空格
+  "editor.trimAutoWhitespace": true,
+
+  // 在制表位后插入和删除空格
+  "editor.useTabStops": true,
+
+  // 标记列表，以逗号分隔，其前应有额外新行。"null" 默认为“标头、正文、/html”。
+  "html.format.extraLiners": "/body",
+
+  // Json格式化
+  "json.format.enable": false,
+
+  // 像素转rem
+  "px2rem.isNeedNotes": false
+}
